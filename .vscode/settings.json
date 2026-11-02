@@ -1,0 +1,18 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json": [
+      "**/*_CV.yaml",
+      "**/plantilla_*.yaml",
+      "clientes/**/*.yaml"
+    ]
+  },
+  "yaml.completion": true,
+  "yaml.validate": true,
+  "yaml.hover": true,
+  "terminal.integrated.env.windows": {
+    "PYTHONUTF8": "1"
+  }
+}
+

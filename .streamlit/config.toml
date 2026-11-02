@@ -1,0 +1,12 @@
+# Los CV contienen datos personales de clientes: la app solo responde en este equipo.
+# Para abrirla desde otro dispositivo de la red, cambia address a "0.0.0.0" sabiendo
+# que cualquiera en esa red (por ejemplo, un wifi público) podría ver los CV.
+[server]
+address = "localhost"
+maxUploadSize = 25
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"

@@ -1,0 +1,63 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "RenderCV: Vista Previa en Vivo (Watch Mode)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "-m",
+        "rendercv",
+        "render",
+        "--watch",
+        "${file}"
+      ],
+      "options": {
+        "env": {
+          "PYTHONUTF8": "1"
+        }
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "RenderCV: Generar CV del Archivo Actual",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "-m",
+        "rendercv",
+        "render",
+        "${file}"
+      ],
+      "options": {
+        "env": {
+          "PYTHONUTF8": "1"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "RenderCV: Generar Todos los 9 Temas para el Cliente Actual",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/generar_todos_los_temas.ps1",
+        "-ArchivoYaml",
+        "${file}"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
+

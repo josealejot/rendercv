@@ -1,0 +1,119 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Juan Pérez Gómez
+  headline: Ingeniero de Software Senior & Arquitecto Cloud
+  location: Bogotá, Colombia
+  email: juan.perez@email.com
+  phone: +57 300 123 4567
+  website: https://juanperez.dev/
+  social_networks:
+    - network: LinkedIn
+      username: juanperez-dev
+    - network: GitHub
+      username: juanperez
+  sections:
+    Perfil Profesional:
+      - Ingeniero de Software con más de 7 años de experiencia diseñando e implementando arquitecturas escalables en la nube, microservicios de alto rendimiento y soluciones basadas en Inteligencia Artificial. Especialista en liderar equipos multidisciplinarios y optimizar costos de infraestructura hasta en un **40%**.
+    Experiencia Laboral:
+      - company: TechNova Solutions
+        position: Arquitecto de Software Líder
+        start_date: 2022-03
+        end_date: present
+        location: Bogotá, Colombia (Híbrido)
+        highlights:
+          - Diseñé y lideré la migración de un sistema monolítico hacia microservicios en AWS, soportando más de **5M de transacciones mensuales** con un 99.98% de disponibilidad.
+          - Reduje la latencia de respuesta de las APIs críticas en un **65%** implementando caché distribuido con Redis y optimización de consultas en PostgreSQL.
+          - Lideré un equipo de 12 desarrolladores implementando prácticas de CI/CD con GitHub Actions y Terraform.
+      - company: Finanzas Digitales LATAM
+        position: Ingeniero Backend Senior
+        start_date: 2019-06
+        end_date: 2022-02
+        location: Medellín, Colombia
+        highlights:
+          - Desarrollé el motor de procesamiento de pagos en tiempo real en Python (FastAPI) y Go, procesando más de **USD $2M mensuales**.
+          - Implementé pipelines de detección de fraude en tiempo real reduciendo los contracargos en un **32%**.
+      - company: InnovaSoft S.A.S.
+        position: Desarrollador Full Stack
+        start_date: 2017-02
+        end_date: 2019-05
+        location: Bogotá, Colombia
+        highlights:
+          - Construí aplicaciones web empresariales utilizando React, TypeScript y Node.js para más de 15 clientes corporativos.
+          - Automaticé la generación de reportes financieros ahorrando 20 horas semanales al equipo operativo.
+    Educación:
+      - institution: Universidad Nacional de Colombia
+        area: Ingeniería de Sistemas y Computación
+        degree: Magíster
+        start_date: 2019-08
+        end_date: 2021-11
+        location: Bogotá, Colombia
+        highlights:
+          - 'Tesis: Optimización de arquitecturas distribuidas para procesamiento de datos en tiempo real'
+          - 'Promedio Académico: 4.7/5.0'
+      - institution: Universidad de los Andes
+        area: Ingeniería de Sistemas
+        degree: Pregrado
+        start_date: 2012-08
+        end_date: 2016-12
+        location: Bogotá, Colombia
+        highlights:
+          - Graduado con honores (Cum Laude)
+    Proyectos Destacados:
+      - name: '[CloudCostGuard](https://github.com/)'
+        start_date: 2023-05
+        end_date: present
+        summary: Herramienta open-source para auditoría automatizada de gastos en AWS y GCP
+        highlights:
+          - Más de 1,200 estrellas en GitHub y adoptada por 15 startups en Latinoamérica.
+      - name: '[DocuSmart AI](https://github.com/)'
+        date: '2022'
+        summary: Plataforma de extracción inteligente de datos en facturas y contratos PDF
+        highlights:
+          - Precisión del 98.5% en documentos escaneados en español y portugués.
+    Habilidades Técnicas:
+      - label: Lenguajes de Programación
+        details: Python, TypeScript, Go, SQL, Bash
+      - label: Cloud & DevOps
+        details: AWS (ECS, Lambda, RDS, S3), Docker, Kubernetes, Terraform, GitHub Actions
+      - label: Bases de Datos & Mensajería
+        details: PostgreSQL, MongoDB, Redis, Apache Kafka, RabbitMQ
+      - label: Idiomas
+        details: Español (Nativo), Inglés (Avanzado C1), Portugués (Intermedio B1)
+    Certificaciones y Reconocimientos:
+      - bullet: AWS Certified Solutions Architect – Professional (2023)
+      - bullet: Certified Kubernetes Administrator (CKA) – Cloud Native Computing Foundation (2022)
+      - bullet: Primer puesto en Hackathon Nacional FinTech Colombia (2021)
+design:
+  theme: classic
+  page:
+    size: a4
+    top_margin: 0.6in
+    bottom_margin: 0.6in
+    left_margin: 0.6in
+    right_margin: 0.6in
+    show_footer: true
+    show_top_note: false
+  sections:
+    show_time_spans_in:
+      - Experiencia Laboral
+  entries:
+    degree_width: 2.8cm
+locale:
+  language: spanish
+settings:
+  current_date: today
+  render_command:
+    output_folder: rendercv_output
+    dont_generate_markdown: false
+    dont_generate_html: false
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: false
+  bold_keywords:
+    - Python
+    - AWS
+    - Kubernetes
+    - PostgreSQL
+    - FastAPI
+    - Go
+  pdf_title: Juan Pérez Gómez - Hoja de Vida

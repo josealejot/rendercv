@@ -1,0 +1,18 @@
+# Datos personales de clientes: nunca al repositorio
+clientes/
+
+# Por si un CV se genera fuera de clientes/
+rendercv_output/
+historial/
+variantes_temas/
+
+# Secretos
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+
+# Herramientas
+.playwright-mcp/
